@@ -49,8 +49,8 @@ class BatimentsTableSeeder extends Seeder
                 "tv016_departement_code" => $faker->numberBetween(1, 99),
                 "geo_score" => $faker->randomFloat(4, 0, 1),
                 'geo_adresse' => $faker->streetAddress(),
-                'latitude' => $faker->randomFloat(4, 0, 50),
-                'longitude' => $faker->randomFloat(4, 0, 50),
+                'latitude' => $faker->randomFloat(4, 40, 52),
+                'longitude' => $faker->randomFloat(4, -5, 10),
                 'classe_consommation_energie' => $faker->randomElement(["A", "B", "C", "D", "E", "F", "G", "N"]),
                 'classe_estimation_ges' => $faker->randomElement(["A", "B", "C", "D", "E", "F", "G", "N"]),
             ]);
