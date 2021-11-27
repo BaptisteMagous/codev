@@ -37,6 +37,8 @@ class BatimentController extends Controller
             case "ges":
                 $data->addSelect('estimation_ges', 'classe_estimation_ges', 'longitude', 'latitude', 'tr002_type_batiment_description', 'code_insee_commune_actualise', 'tv016_departement_code', 'geo_adresse');
                 break;
+            default:
+                return response()->json("", 404);
         }
 
 
