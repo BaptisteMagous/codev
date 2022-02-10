@@ -53,8 +53,9 @@ class BatimentController extends Controller
         return response()->json($data, 200);
     }
 
-    public function show(Batiment $batiment)
+    public function show($type, $batiment_id)
     {
+        $batiment = DB::table('batiments')->find($batiment_id);
         return response()->json($batiment, 200);
     }
 
